@@ -33,14 +33,15 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: white;
     }
-    a{
+
+    a {
         color: tomato;
         text-decoration: none;
     }
 
     @media only screen and (min-width: 600px) {
         body {
-            padding:0 20% !important;
+            padding: 0 20% !important;
         }
     }
 </style>
@@ -250,36 +251,26 @@
     </p>
 
     <p>
-        When you enable the Local VPN tunnel feature in [Your App Name], your device's DNS resolution requests are
+        When you enable the Local VPN tunnel feature in Fenom, your device's DNS resolution requests are
         routed through
         Cloudflare's DNS server (1.1.1.1) instead of your default DNS resolver provided by your Internet Service
         Provider (ISP). This feature serves the following purposes:
     </p>
+    <br>
 
-    <ol>
-        <li>
-            <h2>Overcoming Accessibility Issues</h2>: Some websites may be blocked or restricted by certain ISPs or
-            government authorities. The DNS change feature enables users to bypass such restrictions and access these
-            websites by using Cloudflare's DNS resolver.
-        </li>
-
-        <li>
-            <h2>Improved Performance</h2>: By using Cloudflare's DNS server (1.1.1.1), users can experience faster and
-            more efficient DNS resolution, leading to quicker website loading times.
-        </li>
-
-        <li>
-            <h2>Enhanced Privacy and Security</h2>: Cloudflare's DNS service is known for its privacy-centric approach
-            and commitment to not log user data. You can learn more about Cloudflare's DNS privacy practices by visiting
-            their privacy policy <a
-                href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/">here</a>. By using this
-            service, users can enjoy enhanced privacy and security as their DNS queries are not logged or stored.
-        </li>
-    </ol>
-
-
-
-
+    <h2>
+        Use of VpnService:
+    </h2>
+    <p>
+        "Fenom Downloader" uses the VpnService component to change the DNS server to Cloudflare's 1.1.1.1. This change
+        is
+        made with the primary objective of enhancing user privacy, security, and the speed of internet connections. We
+        want
+        to emphasize that our commitment to user privacy aligns with the principles outlined by Cloudflare in their
+        privacy
+        statement and information about their public DNS resolver, which is available at <a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/" target="_blank"> Link to Cloudflare's privacy
+        statement and information about their public DNS resolver.</a>
+    </p>
     <br>
     <p>
     <h2>Functionality:</h2>
